@@ -1,0 +1,16 @@
+name: Check Links in Repo
+
+permissions: {}
+
+on:
+  workflow_dispatch:
+  schedule:
+  - cron: "0 0 1 * *"
+  repository_dispatch:
+    # run manually
+    types: [check-link]
+
+jobs:
+  check-links:
+    name: Check Repo Links
+    uses: peppi-lotta/workflow-test/.github/workflows/broken-link-check.yaml.yaml@main

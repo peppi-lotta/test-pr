@@ -1,0 +1,13 @@
+name: PR Check Links
+
+permissions: {}
+
+on:
+  pull_request_target:
+    # edited is needed here as this workflow checks for PR meta content
+    types: [opened, edited, reopened, synchronize, ready_for_review]
+
+jobs:
+  check-pr-links:
+    name: Check Links in PR
+    uses: metal3-io/project-infra/.github/workflows/PR-bronken-link-check.yaml.yaml@main
