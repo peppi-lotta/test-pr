@@ -10,4 +10,4 @@ on:
 jobs:
   check-pr-links:
     name: Check Links in PR
-    uses: metal3-io/project-infra/.github/workflows/PR-bronken-link-check.yaml.yaml@main
+    uses: peppi-lotta/workflow-test/.github/workflows/PR-bronken-link-check.yaml@main
