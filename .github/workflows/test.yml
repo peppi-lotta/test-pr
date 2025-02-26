@@ -13,4 +13,4 @@ on:
 jobs:
   check-links:
     name: Check Repo Links
-    uses: peppi-lotta/workflow-test/.github/workflows/broken-link-check.yaml.yaml@main
+    uses: peppi-lotta/workflow-test/.github/workflows/broken-link-check.yaml@main
